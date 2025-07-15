@@ -29,8 +29,9 @@
         private void InitializeComponent()
         {
             buttonDemo = new Button();
-            checkBox1 = new CheckBox();
             checkedListBox1 = new CheckedListBox();
+            pictureBox1 = new PictureBox();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // buttonDemo
@@ -42,16 +43,6 @@
             buttonDemo.Text = "button demo\r\n";
             buttonDemo.UseVisualStyleBackColor = true;
             // 
-            // checkBox1
-            // 
-            checkBox1.AutoSize = true;
-            checkBox1.Location = new Point(337, 103);
-            checkBox1.Name = "checkBox1";
-            checkBox1.Size = new Size(82, 19);
-            checkBox1.TabIndex = 1;
-            checkBox1.Text = "checkBox1";
-            checkBox1.UseVisualStyleBackColor = true;
-            // 
             // checkedListBox1
             // 
             checkedListBox1.FormattingEnabled = true;
@@ -60,24 +51,32 @@
             checkedListBox1.Size = new Size(120, 94);
             checkedListBox1.TabIndex = 3;
             // 
+            // pictureBox1
+            // 
+            pictureBox1.Location = new Point(421, 109);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(100, 50);
+            pictureBox1.TabIndex = 4;
+            pictureBox1.TabStop = false;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(pictureBox1);
             Controls.Add(checkedListBox1);
-            Controls.Add(checkBox1);
             Controls.Add(buttonDemo);
             Name = "Form1";
             Text = "Form1";
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
-            PerformLayout();
         }
 
         #endregion
 
         private Button buttonDemo;
-        private CheckBox checkBox1;
         private CheckedListBox checkedListBox1;
+        private PictureBox pictureBox1;
     }
 }
